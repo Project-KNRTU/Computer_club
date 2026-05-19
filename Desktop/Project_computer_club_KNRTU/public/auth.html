@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Авторизация | Vibe Gaming Club</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container header__inner">
+      <h1>Vibe Gaming Club</h1>
+      <a href="computer_club.html" class="header__btn">На главную</a>
+    </div>
+  </header>
+
+  <main class="auth">
+    <div class="container">
+      <div class="auth__card">
+        <h2>Вход / Регистрация</h2>
+
+        <form id="authForm" class="auth-form">
+          <label for="username">Имя</label>
+          <input type="text" id="username" placeholder="Введите имя" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Введите email" required>
+
+          <label for="password">Пароль</label>
+          <input type="password" id="password" placeholder="Введите пароль" required>
+
+          <div class="auth__buttons">
+            <button type="submit">Зарегистрироваться</button>
+            <button type="button" id="loginBtn">Войти</button>
+          </div>
+        </form>
+
+        <div id="authMessage" class="auth-message"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>
